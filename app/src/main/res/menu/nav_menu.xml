@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_statuses" android:title="Statuses" android:icon="@drawable/ic_menu_gallery"/>
+    <item android:id="@+id/nav_saved" android:title="Saved Statuses" android:icon="@drawable/ic_save"/>
+
+    <item android:id="@+id/header_auto_delete" android:title="Auto Delete"/>
+    <group android:id="@+id/group_auto_delete">
+        <item android:id="@+id/nav_ad_off" android:title="Off"/>
+        <item android:id="@+id/nav_ad_7" android:title="7 days"/>
+        <item android:id="@+id/nav_ad_30" android:title="30 days"/>
+        <item android:id="@+id/nav_ad_90" android:title="90 days"/>
+    </group>
+
+    <item android:id="@+id/header_theme" android:title="Theme"/>
+    <group android:id="@+id/group_theme">
+        <item android:id="@+id/nav_theme_system" android:title="System"/>
+        <item android:id="@+id/nav_theme_light" android:title="Light"/>
+        <item android:id="@+id/nav_theme_dark" android:title="Dark"/>
+    </group>
+
+    <item android:id="@+id/header_about" android:title="About"/>
+    <group android:id="@+id/group_about">
+        <item android:id="@+id/nav_how_to_use" android:title="How to use"/>
+        <item android:id="@+id/nav_privacy_policy" android:title="Privacy Policy"/>
+        <item android:id="@+id/nav_share" android:title="Share App"/>
+    </group>
+
+</menu>

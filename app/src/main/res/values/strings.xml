@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Details -->
+    <string name="app_name">ADV Status Saver</string>
+    <string name="app_icon_description">Application icon</string>
+
+    <!-- Navigation Drawer & Toolbar Toggles -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Main Navigation Items -->
+    <string name="nav_statuses">Recent Statuses</string>
+    <string name="nav_saved_title">Saved Statuses</string>
+
+    <!-- Settings Section Labels -->
+    <string name="settings_title">Settings</string>
+    <string name="setting_auto_delete">Auto Delete</string>
+    <string name="setting_theme">Theme</string>
+
+    <!-- About Section Items -->
+    <string name="about_title">About</string>
+    <string name="about_how_to_use">How to Use</string>
+    <string name="about_privacy_policy">Privacy Policy</string>
+    <string name="about_share_app">Share App</string>
+    <string name="share_app_title">Share App via…</string>
+
+    <!-- Tab Titles -->
+    <string name="tab_all">All</string>
+    <string name="tab_images">Images</string>
+    <string name="tab_videos">Videos</string>
+
+    <!-- Toolbar Actions -->
+    <string name="action_download">Download</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save Selected</string>
+    <string name="action_select_all">Select All</string>
+    <string name="selection_count">%1$d selected</string>
+
+    <!-- Empty State Text -->
+    <string name="empty_state_text">No statuses found. Ensure WhatsApp is installed and permissions are granted.</string>
+
+    <!-- Dialog Button Labels -->
+    <string name="close_button">Close</string>
+    <string name="got_it_button">Got It</string>
+    <string name="delete_button">Delete</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- Runtime Messages & Auto Delete -->
+    <string name="double_back_exit">Press back again to exit</string>
+    <string name="status_saved_count">Saved %d statuses</string>
+    <string name="status_deleted_count">Deleted %d statuses</string>
+    <string name="auto_delete_set">Auto delete set to %d days</string>
+    <string name="auto_delete_result">Auto-deleted %d old statuses.</string>
+
+    <!-- Delete Dialog Content -->
+    <string name="delete_statuses_title">Delete Statuses</string>
+    <string name="delete_statuses_confirm">Are you sure you want to delete %d status(es)? This action is permanent.</string>
+
+    <!-- Privacy Policy Dialog Content -->
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="privacy_policy_text">We value your privacy. This application adheres to a strict no-data collection policy. It operates entirely locally:\n\n1. All WhatsApp status files are accessed and displayed solely within the app.\n2. Saved statuses are stored locally in a dedicated folder on your device storage.\n3. We do not transmit any user data, status data, or personal information to any external server.\n\nThank you for trusting our commitment to your privacy.</string>
+
+    <!-- String Arrays (Used for Spinners) -->
+    <string-array name="auto_delete_options">
+        <item>Off (Keep forever)</item>
+        <item>7 Days</item>
+        <item>30 Days</item>
+        <item>90 Days</item>
+    </string-array>
+
+    <string-array name="theme_options">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+</resources>

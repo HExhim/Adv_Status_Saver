@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customDrawer"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/colorSurface"
+    android:elevation="16dp">
+
+    <!-- Drawer Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="180dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:background="?attr/colorPrimaryContainer">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Saver"
+            android:textColor="?attr/colorOnPrimarySurface"
+            android:textAppearance="?attr/textAppearanceTitleLarge"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/header_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save WhatsApp Status Easily"
+            android:textColor="?attr/colorOnPrimarySurface"
+            android:textAppearance="?attr/textAppearanceBodyMedium"/>
+
+    </LinearLayout>
+
+    <!-- Navigation Menu Items -->
+    <LinearLayout
+        android:id="@+id/containerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8dp">
+
+        <!-- Statuses -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_statuses"
+            android:text="@string/nav_statuses"
+            android:drawableStart="@drawable/ic_menu_gallery"
+            android:drawablePadding="32dp"
+            style="@style/DrawerMenuItemStyle"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Saved -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_saved"
+            android:text="@string/nav_saved_title"
+            android:drawableStart="@drawable/ic_save"
+            android:drawablePadding="32dp"
+            style="@style/DrawerMenuItemStyle"/>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/colorOutlineVariant"
+            android:layout_marginHorizontal="16dp"/>
+
+        <!-- AUTO DELETE (Inline Dropdown) -->
+        <LinearLayout
+            android:id="@+id/menu_auto_delete"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Auto Delete"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:drawableStart="@drawable/ic_delete"
+                android:drawablePadding="32dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerAutoDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_delete_options"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- THEME (Inline Dropdown) -->
+        <LinearLayout
+            android:id="@+id/menu_theme"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Theme"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:drawableStart="@drawable/ic_settings"
+                android:drawablePadding="32dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/theme_options"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/colorOutlineVariant"
+            android:layout_marginHorizontal="16dp"/>
+
+        <!-- Other Links -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_how_to_use"
+            android:text="@string/about_how_to_use"
+            android:drawableStart="@drawable/ic_help"
+            android:drawablePadding="32dp"
+            style="@style/DrawerMenuItemStyle"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_privacy_policy"
+            android:text="@string/about_privacy_policy"
+            android:drawableStart="@drawable/ic_privacy"
+            android:drawablePadding="32dp"
+            style="@style/DrawerMenuItemStyle"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_share"
+            android:text="@string/about_share_app"
+            android:drawableStart="@drawable/ic_share"
+            android:drawablePadding="32dp"
+            style="@style/DrawerMenuItemStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

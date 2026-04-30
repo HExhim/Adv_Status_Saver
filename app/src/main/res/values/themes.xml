@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ADVStatusSave" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/whatsapp_green_primary</item>
+        <item name="colorPrimaryContainer">@color/whatsapp_green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/whatsapp_accent</item>
+        <item name="colorSecondaryContainer">@color/whatsapp_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/whatsapp_green_dark</item>
+    </style>
+
+    <style name="Theme.ADVStatusSave" parent="Base.Theme.ADVStatusSave" />
+    <style name="DrawerMenuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <!-- Standard Material 3 minimum touch height for list/menu items -->
+        <item name="android:layout_height">56dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <!-- Provides the Material 3 ripple effect on interaction -->
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <!-- Body Large is appropriate for navigation labels -->
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <!-- Ensures text color adapts to dark/light theme on surfaces -->
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <!-- The padding between the icon and the text is handled by android:drawablePadding="32dp" in the layout file -->
+    </style>
+</resources>
